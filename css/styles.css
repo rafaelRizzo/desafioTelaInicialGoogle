@@ -1,0 +1,273 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style: none;
+    padding: 18px;
+    margin: 0 8px;
+}
+
+ul li a {
+    font-size: 13px;
+    color: #000;
+}
+
+ul li:nth-child(4) {
+    background-color: #1a73e8;
+    border-radius: 5px;
+    padding: 9px 26px;
+}
+
+.login {
+    color: #fff;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+.gb_Ue {
+    filter: invert(36%) sepia(9%) saturate(313%) hue-rotate(173deg) brightness(98%) contrast(83%);
+    width: 24px;
+    height: 24px;
+}
+
+.logo {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 20px;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 70px - 102px);
+}
+
+input {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    height: 34px;
+    width: 100%;
+    padding: 10px;
+    border-right: 1px solid #dadce0;
+    transform: translateX(-15px);
+    color: rgba(0, 0, 0, .87);
+}
+
+.lupa {
+    filter: invert(75%) sepia(15%) saturate(131%) hue-rotate(169deg) brightness(83%) contrast(87%);
+    transform: translateX(-10px);
+}
+
+.keyboard {
+    width: 26px;
+    height: 18px;
+}
+
+.iconBox {
+    margin: 0 5px;
+}
+
+.boxInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 584px;
+    padding: 22px;
+    transition: all .2s ease;
+}
+
+.boxInput:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.shadowFocus {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.boxLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.boxRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    margin-top: 26px;
+}
+
+aside a {
+    margin: 20px;
+    color: #202124;
+    font-size: 14px;
+    padding: 10px;
+    transition: all .2s ease;
+}
+
+aside a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.boxFooter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    color: #70757a;
+}
+
+.boxBot {
+    justify-content: space-between;
+}
+
+.boxBot a {
+    margin-right: 10px;
+    color: #70757a;
+}
+
+.boxBotRight a {
+    margin-right: 20px;
+    color: #70757a;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul li {
+        margin: 10px;
+    }
+
+    ul li:first-child {
+        margin: 0;
+    }
+
+    ul li:last-child {
+        margin: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .boxFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .boxBotRight,
+    .boxBotLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxFooter {
+        padding: 10px;
+    }
+
+    .boxBotRight {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .boxBotRight a,
+    .boxBotLeft a {
+        margin: 10px;
+    }
+}
+
+
+
+@media (max-width: 350px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .gb_Ue {
+        width: 16px;
+    }
+
+    .boxInput {
+        width: 95%;
+    }
+
+    aside a {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 281px) {
+
+    .logo {
+        width: 90%;
+    }
+
+    aside a{
+        font-size: 12px;
+    }
+}
